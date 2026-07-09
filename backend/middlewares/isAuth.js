@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 
 const isAuth = async(req,res,next) =>{
     try{
-        let token = req.cookies.token;
+        let token = req.headers.authorization?.split(" ")[1] || req.cookies?.token;
         if(!token){
             return res.status(400).json({message:"Please login first"});
         }

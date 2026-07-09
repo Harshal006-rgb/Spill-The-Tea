@@ -25,7 +25,8 @@ function Login() {
             let result = await axios.post(serverUrl + "/api/auth/login", { email, password },
                 { withCredentials: true }); //needed to parse cookies
 
-            dispatch(setUserData(result.data));
+            localStorage.setItem("token", result.data.token);
+            dispatch(setUserData(result.data.user));
 
             //clear the fields
             setEmail("");

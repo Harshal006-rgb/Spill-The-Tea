@@ -20,6 +20,7 @@ const Sidebar = () => {
         try {
 
             let result = await axios.get(`${serverUrl}/api/auth/logout`, { withCredentials: true })
+            localStorage.removeItem("token");
             dispatch(setUserData(null));
             dispatch(setOtherUsers(null));
             navigate("/login");
