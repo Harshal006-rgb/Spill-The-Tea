@@ -14,7 +14,7 @@ import { app, server } from "./socket/socket.js";
 
 // connecting backend with frontend
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://spill-the-tea-4251.onrender.com"],
     credentials: true
 }));
 app.use(express.json());
