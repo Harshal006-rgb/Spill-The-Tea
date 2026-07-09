@@ -13,7 +13,7 @@ const Home = () => {
   }
   return (
 
-    <div className='w-screen h-screen flex'>
+    <div className='w-full h-dvh flex overflow-hidden'>
       <Sidebar />
       <MessageArea />
     </div>

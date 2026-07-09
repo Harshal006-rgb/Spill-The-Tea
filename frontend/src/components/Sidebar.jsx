@@ -52,7 +52,7 @@ const Sidebar = () => {
 
 
     return (
-        <div className={`md:w-[30%] w-screen h-screen flex-col bg-slate-200 ${selectedUser ? 'hidden md:flex' : 'flex'}`}>
+        <div className={`lg:w-[30%] w-full h-dvh flex-col bg-slate-200 ${selectedUser ? 'hidden lg:flex' : 'flex'}`}>
             <div onClick={handleLogout}> <TbLogout2 className='w-12 h-12 p-3 z-50 bg-white shadow-lg fixed bottom-5 left-5 cursor-pointer hover:text-white hover:bg-blue-500 rounded-full  transition-all duration-200' /></div>
             <div className=' bg-blue-500 w-full shadow-lg shrink-0' >
 

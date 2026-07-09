@@ -104,14 +104,14 @@ const MessageArea = () => {
 
   if (!selectedUser) {
     return (
-      <div className='md:w-[70%] w-full hidden md:flex h-screen bg-amber-50 items-center justify-center text-gray-500'>
+      <div className='lg:w-[70%] w-full hidden lg:flex h-dvh bg-amber-50 items-center justify-center text-gray-500'>
         <p className='text-lg font-medium'>Ready to Spill Your Tea !!</p>
       </div>
     )
   }
 
   return (
-    <div className='md:w-[70%] w-full flex flex-col h-screen bg-[#e5ddd5] relative'>
+    <div className='lg:w-[70%] w-full flex flex-col h-dvh bg-[#e5ddd5] relative'>
 
       {/* Chat Header */}
       <div className='w-full h-[12%] bg-slate-200 flex items-center justify-between px-8 shadow-lg shrink-0'>
